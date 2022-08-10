@@ -1,0 +1,123 @@
+body {
+	background-color: hsl(30, 38%, 92%);
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+.main-container {
+	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 500px;
+	height: 430px;
+	margin: 0px;
+	position: absolute;
+	top: 17%;
+	/*vertical-align: middle;*/
+	background-color: white;
+	border-radius: 5%;
+}
+.image {
+	display: flex;
+	width: 100%;
+}
+
+.image img {
+	width: 100%;
+	border-top-left-radius: 5%;
+	border-bottom-left-radius: 5%;
+}
+.text2 {
+	margin: 20px 20px 20px 20px;
+}
+
+p {
+	font-size: 13px;
+	color: hsl(228, 12%, 48%);
+	font-family: sans-serif;
+}
+.perfume {
+	font-size: 12px;
+}
+
+h1 {
+	color: hsl(212, 21%, 14%);
+	font-family: unset;
+	font-weight: 700;
+}
+#numbers {
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px;
+	height: 70px;
+}
+
+.number {
+	display: flex;
+	width: 50%;
+
+}
+
+.n1 {
+	color: hsl(158, 36%, 37%);
+	font-size: 2em;
+	font-family: unset;
+}
+
+.n2 {
+	padding-top: 15px;
+	font-size:13px;
+	color: hsl(228, 12%, 48%);
+}
+
+h4 {
+	text-decoration: line-through;
+}
+
+button {
+	width: 100%;
+	height: 40px;
+	border-radius: 7px;
+	border: none;
+	background-color: hsl(158, 36%, 37%);
+	color: white;
+}
+button:active {
+	cursor: pointer;
+	background-color: #10231c;
+}
+.btn {
+	margin-right: 5px;
+}
+
+@media (max-width: 500px) {
+
+	body {
+		height: auto;
+	}
+	.main-container {
+		display: flex;
+		display: grid;
+		grid-template-rows: 1fr 2fr;
+		display: block;
+		width: 300px;
+		height: 580px;
+		top: 0;
+		margin: 20px 20px 20px 20px;
+	}
+	.image {
+		content: url(images/image-product-mobile.jpg);
+	}
+	.image{
+		width: 100%;
+		border-top-left-radius: 5%;
+		border-top-right-radius: 5%;
+	}
+	
+}
+
+
